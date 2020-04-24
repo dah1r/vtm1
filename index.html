@@ -76,23 +76,29 @@
   <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.js"></script>
   <script>
-    var const firebaseConfig = {
-  apiKey: "AIzaSyCGVHAqBJu-Np0MiJA08FZXeAoeH1RadHU",
-  authDomain: "vampiro-hoja-de-personaje.firebaseapp.com",
-  databaseURL: "https://vampiro-hoja-de-personaje.firebaseio.com",
-  projectId: "vampiro-hoja-de-personaje",
-  storageBucket: "vampiro-hoja-de-personaje.appspot.com",
-  messagingSenderId: "616622088205",
-  appId: "1:616622088205:web:45ca1fefff07a58d0ff544",
-  measurementId: "G-V68N1HPB48"
-};
-    firebase.initializeApp(config);
-    angular.element(function(){
-      setTimeout(function(){
-        angular.bootstrap(document, ['site']);
-      }, 400);
-    });
-  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCGVHAqBJu-Np0MiJA08FZXeAoeH1RadHU",
+    authDomain: "vampiro-hoja-de-personaje.firebaseapp.com",
+    databaseURL: "https://vampiro-hoja-de-personaje.firebaseio.com",
+    projectId: "vampiro-hoja-de-personaje",
+    storageBucket: "vampiro-hoja-de-personaje.appspot.com",
+    messagingSenderId: "616622088205",
+    appId: "1:616622088205:web:45ca1fefff07a58d0ff544",
+    measurementId: "G-V68N1HPB48"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <!--/Firebase stuff-->
 
   <!--Cookie Policy stuff-->
